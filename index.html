@@ -1,31 +1,58 @@
 <!doctype html>
-<html>
+<html lang="ko">
+
 <head>
-<title>WEB1 - Welcome</title>
-<meta charset="utf-8">
+    <title>WEB1 - Welcome</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
 </head>
+
 <body>
-    <h1><a href="index.html">WEB</a></h1>
+    <input id="night_day" type="button" value="Darkmode" onclick="DarkLightHandler(this)">
+    <h1>
+        <div><a href="index.html">WEB</a></div>
+    </h1>
+    <div id="grid">
+
+        <ol>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+        </ol>
+
+        <!--
+        <h1><a href="index.html"><font color = "red">WEB</font></a></h1>
 <ol>
     <li><a href="1.html">HTML</a></li>
     <li><a href="2.html">CSS</a></li>
     <li><a href="3.html">JavaScript</a></li>
 </ol>
-<h2>Web</h2>
-<p><a href="https://en.wikipedia.org/wiki/World_Wide_Web"
-    target="_blank" title="web
-    specification">The World Wide Web (WWW)</a>, 
-    commonly known as the Web, 
-    is an information system where documents and other web resources 
-    are identified by Uniform Resource Locators (URLs, such as https://example.com/), 
-    which may be interlinked by hypertext, and are accessible over 
-    the Internet.[1][2] The resources of the Web are transferred via the Hypertext 
-    Transfer Protocol (HTTP), may be accessed by users by a software application 
-    called a web browser, and are published by a software application 
-    called a web server. The World Wide Web is not synonymous with the Internet, 
-    which pre-dated the Web in some form by over two decades and 
-    upon which technologies the Web is built.
-</p>
-<img src="coding.jpg"width="100%">
-</body>s
+-->
+        <div id="article">
+            <h2>Welcome</h2>
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+
+            <p><a href="https://en.wikipedia.org/wiki/World_Wide_Web" target="_blank" title="web
+    specification">The World Wide Web (WWW)</a>,
+                commonly known as the Web,
+                is an information system where documents and other web resources
+                are identified by Uniform Resource Locators (URLs, such as https://example.com/),
+                which may be interlinked by hypertext, and are accessible over
+                the Internet.[1][2] The resources of the Web are transferred via the Hypertext
+                Transfer Protocol (HTTP), may be accessed by users by a software application
+                called a web browser, and are published by a software application
+                called a web server. The World Wide Web is not synonymous with the Internet,
+                which pre-dated the Web in some form by over two decades and
+                upon which technologies the Web is built.
+            </p>
+            <img src="coding.jpg" width="560" height="315">
+        </div>
+    </div>
+</body>
+
 </html>
